@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" type = "image/x-icon" href = "assets/images/site_logo.svg">
+    <title>समाज कल्याण परिषद्</title>
+    <!-- bootstrap -->
+    <link rel = "stylesheet" href = "assets/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <!-- date picker -->
+    <link rel = "stylesheet" href = "assets/plugins/nepali-date-picker/css/nepali.datepicker.v3.7.min.css">
+    <!-- custom stylings -->
+    <link rel = "stylesheet" href = "assets/css/utilities.css">
+    <link rel = "stylesheet" href = "assets/css/style.css">
+</head>
+<body>
+    <div class = "pg-intern fnt-mukta">
+        <!-- header section -->
+        <header class = "pg-header">
+            <nav class = "pg-nav px-3">
+                <div class = "container h-100 d-flex align-items-center">
+                    <div class = "pg-nav-and-toggler d-flex align-items-center justify-content-between w-100">
+                        <a href = "dashboard.html" class = "d-flex align-items-center pg-nav-brand flex-wrap">
+                            <img src = "assets/images/site_logo.svg" alt = "site logo">
+                            <div class = "pg-nav-brand-text">
+                                <span class = "d-block fs-22">समाज कल्याण परिषद्</span>
+                                <span class = "text-blue fw-7 fs-35">सचिवलय</span>
+                            </div>
+                        </a>
+
+                        <form class = "pg-nav-form ms-auto">
+                            <div class = "pg-form-elem d-flex align-items-center">
+                                <button type = "button" class = "pg-form-elem-img me-3">
+                                    <img src = "assets/images/search_icon.svg" alt = "" class = "img-fluid">
+                                </button>
+                                <input type = "text" placeholder="Search" class = "border-0 bg-transparent pg-form-elem-field">
+                            </div>
+                        </form>
+
+                        <div class = "pg-nav-btns d-flex align-items-center">
+                            <button class = "pg-nav-btn position-relative my-2">
+                                <img src = "assets/images/bell_icon.svg" alt = "" class = "pg-nav-btn-img">
+                                <span class = "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">3</span>
+                            </button>
+
+                            <div class="pg-nav-btn dropdown my-2">
+                                <button class="btn dropdown-toggle p-0" type="button" id="navDropdown1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src = "assets/images/user_icon.svg" alt = "" class = "pg-nav-btn-img d-inline-block">
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="navDropdown1">
+                                  <li><a class="dropdown-item" href="#">See Profile</a></li>
+                                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- end of header section -->
+
+        <main>
+            <div class = "main-wrapper d-flex">
+                <!-- sidebar -->
+                <div class = "pg-sidebar pg-block-scrollbar">
+                    <div class = "pg-sidebar-block text-white">
+                        <a href = "#" class = "pg-sidebar-item pg-sidebar-active-item d-flex align-items-center">
+                            <div class = "pg-sidebar-item-icon">
+                                <img src = "assets/images/sidebar-icons/conversation-icon.svg" alt = "">
+                            </div>
+                            <span class = "pg-sidebar-item-text">भेटघाट</span>
+                        </a>
+                        <a href = "#" class = "pg-sidebar-item d-flex align-items-center">
+                            <div class = "pg-sidebar-item-icon">
+                                <img src = "assets/images/sidebar-icons/meeting-icon.svg" alt = "">
+                            </div>
+                            <span class = "pg-sidebar-item-text">कार्यतालिका</span>
+                        </a>
+                        <a href = "#" class = "pg-sidebar-item d-flex align-items-center">
+                            <div class = "pg-sidebar-item-icon">
+                                <img src = "assets/images/sidebar-icons/agreement-icon.svg" alt = "">
+                            </div>
+                            <span class = "pg-sidebar-item-text">साधारण सम्झौता</span>
+                        </a>
+                        <a href = "#" class = "pg-sidebar-item d-flex align-items-center">
+                            <div class = "pg-sidebar-item-icon">
+                                <img src = "assets/images/sidebar-icons/agreement-icon.svg" alt = "">
+                            </div>
+                            <span class = "pg-sidebar-item-text">परियोजना स्वीकृति</span>
+                        </a>
+                        <a href = "#" class = "pg-sidebar-item d-flex align-items-center">
+                            <div class = "pg-sidebar-item-icon">
+                                <img src = "assets/images/sidebar-icons/intern-icon.svg" alt = "">
+                            </div>
+                            <span class = "pg-sidebar-item-text">इन्टर्न</span>
+                        </a>
+                        <a href = "#" class = "pg-sidebar-item d-flex align-items-center">
+                            <div class = "pg-sidebar-item-icon">
+                                <img src = "assets/images/sidebar-icons/visa-icon.svg" alt = "">
+                            </div>
+                            <span class = "pg-sidebar-item-text">भिषा सम्बन्धि</span>
+                        </a>
+                        <a href = "#" class = "pg-sidebar-item d-flex align-items-center">
+                            <div class = "pg-sidebar-item-icon">
+                                <img src = "assets/images/sidebar-icons/setting-icon.svg" alt = "">
+                            </div>
+                            <span class = "pg-sidebar-item-text">सेटिङ</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- end of sidebar -->
+
+                <!-- content -->
+                <div class = "pg-main-content bg-lightblue pg-block-scrollbar">
+                    <div class = "pg-main-wrapper">
+                        <div class = "pg-main-top d-flex align-items-center justify-content-between px-container">
+                            <div class = "bg-white py-4 px-3 w-100">
+                                <div class = "row align-items-center justify-content-between">
+                                    <div class = "col-6 d-flex align-items-center justify-content-between">
+                                        <h2 class = "fw-7 fs-22 mb-0 me-3 me-xl-5 mb-3 mb-sm-0">साधारण सम्झौता</h2>
+                                        <form>
+                                            <div class = "input-group border-r-10">
+                                                <span class = "input-group-text bg-white fs-22">
+                                                    <i class="bi bi-search"></i>
+                                                </span>
+                                                <input type = "text" class = "form-control fs-20" placeholder="साधारण सम्झौता नाम">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class = "col-6 d-flex align-items-center justify-content-end">
+                                        <div class = "d-flex align-items-center">
+                                            <div class="dropdown me-2">
+                                                <button class="btn-radius dropdown-toggle" type="button" id="statusButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Status
+                                                </button>
+                                                <ul class="dropdown-menu p-2 border-r-20" aria-labelledby="statusButton1">
+                                                    <li class = "mb-2">
+                                                        <a class="dropdown-item btn-radius d-flex align-items-center justify-content-around" href="#">
+                                                            <img src = "assets/images/icons/circle-icon-blue.svg" class = "icon-fluid">
+                                                            <span>Active</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item btn-radius d-flex align-items-center justify-content-around" href="#">
+                                                            <img src = "assets/images/icons/circle-icon-red.svg" class = "icon-fluid">
+                                                            <span>Time Off</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class = "pg-block-1-display-grid-opt d-flex align-items-center">
+                                                <button type = "button" class = "fs-24 mx-2">
+                                                    <i class="bi bi-grid-3x3-gap-fill"></i>
+                                                </button>
+                                                <button type = "button" class = "fs-24 mx-2">
+                                                    <i class="bi bi-distribute-vertical"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <button type = "button" class = "text-capitalize btn-blue ms-sm-4 mt-4 mt-sm-0"> नयाँ सम्झौता बनाउनुहोस्</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "pg-block-wrapper px-container">
+                            <!-- pg block 1 -->
+                            <div class = "pg-block-1 py-3">
+                                <div class = "row">
+                                    <table class = "table pg-block-tbl table-striped bg-white mt-2 text-center">
+                                        <thead>
+                                            <tr>
+                                                <th class = "py-3">व्यक्तिको नाम</th>
+                                                <th class = "py-3">इन्टनको विषय</th>
+                                                <th class = "py-3">संथाको नाम</th>
+                                                <th class = "py-3">रिफरेन्स</th>
+                                                <th class = "py-3">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class = "fw-6">
+                                                <td>राम कटेल</td>
+                                                <td>म्यानेजमेन्ट</td>
+                                                <td>plan international</td>
+                                                <td>राजराम कटेल</td>
+                                                <td>
+                                                    <!-- <div class = "tbl-status-btns mx-auto">
+                                                        <a href = "#" class = "tbl-status-btn d-flex align-items-center">
+                                                            <img src = "assets/images/success-icon.svg" alt = "" class = "tbl-status-icon">
+                                                            <span class = "tbl-status-text">Approved</span>
+                                                            <span class = "tbl-status-toggle">
+                                                                <i class="bi bi-chevron-down"></i>
+                                                            </span>
+                                                        </a>
+                                                        <a href = "#" class = "tbl-status-btn d-flex align-items-center">
+                                                            <img src = "assets/images/cancel-icon.svg" alt = "" class = "tbl-status-icon">
+                                                            <span class = "tbl-status-text">Rejected</span>
+                                                            <span class = "tbl-status-toggle">
+                                                                <i class="bi bi-chevron-down"></i>
+                                                            </span>
+                                                        </a>
+                                                        <a href = "#" class = "tbl-status-btn d-flex align-items-center">
+                                                            <img src = "assets/images/reschedule-icon.svg" alt = "" class = "tbl-status-icon">
+                                                            <span class = "tbl-status-text">Pending</span>
+                                                            <span class = "tbl-status-toggle">
+                                                                <i class="bi bi-chevron-down"></i>
+                                                            </span>
+                                                        </a>
+                                                    </div> -->
+                                                </td>
+                                            </tr>
+
+                                            <tr class = "fw-6">
+                                                <td>राम कटेल</td>
+                                                <td>म्यानेजमेन्ट</td>
+                                                <td>plan international</td>
+                                                <td>राजराम कटेल</td>
+                                                <td>
+                                                    
+                                                </td>
+                                            </tr>
+
+                                            <tr class = "fw-6">
+                                                <td>राम कटेल</td>
+                                                <td>म्यानेजमेन्ट</td>
+                                                <td>plan international</td>
+                                                <td>राजराम कटेल</td>
+                                                <td>
+                                                    
+                                                </td>
+                                            </tr>
+
+                                            <tr class = "fw-6">
+                                                <td>राम कटेल</td>
+                                                <td>म्यानेजमेन्ट</td>
+                                                <td>plan international</td>
+                                                <td>राजराम कटेल</td>
+                                                <td>
+                                                    
+                                                </td>
+                                            </tr>
+
+                                            <tr class = "fw-6">
+                                                <td>राम कटेल</td>
+                                                <td>म्यानेजमेन्ट</td>
+                                                <td>plan international</td>
+                                                <td>राजराम कटेल</td>
+                                                <td>
+                                                    
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- end of block 1 -->
+                        </div>
+                    </div>
+                </div>
+                <!-- end of content -->
+            </div>
+        </main>
+
+        
+    </div>
+
+
+    <!-- scripts -->
+    <script src = "assets/js/jquery-3.6.0.js"></script>
+    <!-- nepali date picker -->
+    <script src = "assets/plugins/nepali-date-picker/js/nepali.datepicker.v3.7.min.js"></script>
+    <!-- bootstrap -->
+    <script src = "assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src = "assets/js/script.js"></script>
+</body>
+</html>

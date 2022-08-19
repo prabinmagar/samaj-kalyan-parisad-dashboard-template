@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" type = "image/x-icon" href = "assets/images/site_logo.svg">
+    <title>समाज कल्याण परिषद्</title>
+    <!-- bootstrap -->
+    <link rel = "stylesheet" href = "assets/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel = "stylesheet" href = "assets/css/utilities.css">
+    <link rel = "stylesheet" href = "assets/css/style.css">
+</head>
+<body>
+    <div class = "pg-dashboard fnt-mukta">
+        <header class = "pg-header">
+            <nav class = "pg-nav px-3">
+                <div class = "container h-100 d-flex align-items-center">
+                    <div class = "pg-nav-and-toggler d-flex align-items-center justify-content-between w-100">
+                        <a href = "dashboard.html" class = "d-flex align-items-center pg-nav-brand">
+                            <img src = "assets/images/site_logo.svg" alt = "site logo">
+                            <div class = "pg-nav-brand-text">
+                                <span class = "d-block fs-22">समाज कल्याण परिषद्</span>
+                                <span class = "text-blue fw-7 fs-35">सचिवलय</span>
+                            </div>
+                        </a>
+
+                        <form class = "pg-nav-form ms-auto">
+                            <div class = "pg-form-elem d-flex align-items-center">
+                                <button type = "button" class = "pg-form-elem-img me-3">
+                                    <img src = "assets/images/search_icon.svg" alt = "" class = "img-fluid">
+                                </button>
+                                <input type = "text" placeholder="Search" class = "border-0 bg-transparent pg-form-elem-field">
+                            </div>
+                        </form>
+
+                        <div class = "pg-nav-btns d-flex align-items-center">
+                            <button class = "pg-nav-btn position-relative my-2">
+                                <img src = "assets/images/bell_icon.svg" alt = "" class = "pg-nav-btn-img">
+                                <span class = "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">3</span>
+                            </button>
+
+                            <div class="pg-nav-btn dropdown my-2">
+                                <button class="btn dropdown-toggle p-0" type="button" id="navDropdown1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src = "assets/images/user_icon.svg" alt = "" class = "pg-nav-btn-img d-inline-block">
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="navDropdown1">
+                                  <li><a class="dropdown-item" href="#">See Profile</a></li>
+                                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class = "main-wrapper d-flex">
+                <!-- sidebar -->
+                <div class = "pg-sidebar pg-block-scrollbar">
+                    <div class = "pg-sidebar-block text-white">
+                        <a href = "#" class = "pg-sidebar-item pg-sidebar-active-item d-flex align-items-center">
+                            <div class = "pg-sidebar-item-icon">
+                                <img src = "assets/images/sidebar-icons/conversation-icon.svg" alt = "">
+                            </div>
+                            <span class = "pg-sidebar-item-text">भेटघाट</span>
+                        </a>
+                        <a href = "#" class = "pg-sidebar-item d-flex align-items-center">
+                            <div class = "pg-sidebar-item-icon">
+                                <img src = "assets/images/sidebar-icons/meeting-icon.svg" alt = "">
+                            </div>
+                            <span class = "pg-sidebar-item-text">कार्यतालिका</span>
+                        </a>
+                        <a href = "#" class = "pg-sidebar-item d-flex align-items-center">
+                            <div class = "pg-sidebar-item-icon">
+                                <img src = "assets/images/sidebar-icons/agreement-icon.svg" alt = "">
+                            </div>
+                            <span class = "pg-sidebar-item-text">साधारण सम्झौता</span>
+                        </a>
+                        <a href = "#" class = "pg-sidebar-item d-flex align-items-center">
+                            <div class = "pg-sidebar-item-icon">
+                                <img src = "assets/images/sidebar-icons/agreement-icon.svg" alt = "">
+                            </div>
+                            <span class = "pg-sidebar-item-text">परियोजना स्वीकृति</span>
+                        </a>
+                        <a href = "#" class = "pg-sidebar-item d-flex align-items-center">
+                            <div class = "pg-sidebar-item-icon">
+                                <img src = "assets/images/sidebar-icons/intern-icon.svg" alt = "">
+                            </div>
+                            <span class = "pg-sidebar-item-text">इन्टर्न</span>
+                        </a>
+                        <a href = "#" class = "pg-sidebar-item d-flex align-items-center">
+                            <div class = "pg-sidebar-item-icon">
+                                <img src = "assets/images/sidebar-icons/visa-icon.svg" alt = "">
+                            </div>
+                            <span class = "pg-sidebar-item-text">भिषा सम्बन्धि</span>
+                        </a>
+                        <a href = "#" class = "pg-sidebar-item d-flex align-items-center">
+                            <div class = "pg-sidebar-item-icon">
+                                <img src = "assets/images/sidebar-icons/setting-icon.svg" alt = "">
+                            </div>
+                            <span class = "pg-sidebar-item-text">सेटिङ</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- end of sidebar -->
+
+                <!-- content -->
+                <div class = "pg-main-content bg-lightblue pg-block-scrollbar">
+                    <div class = "pg-main-wrapper">
+                        <div class = "pg-main-top d-flex align-items-center justify-content-end px-container">
+                            <a href = "#" class = "btn btn-blue d-flex align-items-center">
+                                <img src = "assets/images/plus-icon.svg" alt = "">
+                                <span class = "ms-3 fw-5 fs-14 text-white">थप्नुहोस्</span>
+                            </a>
+                        </div>
+                        <div class = "pg-block-wrapper px-container">
+                            <div class = "pg-block pg-block-1">
+                                <table class = "table pg-block-tbl text-center mb-0 border-none">
+                                    <thead class = "fw-6 fs-18">
+                                        <tr class = "text-black-50">
+                                            <th>व्यक्ति वा संथको नाम</th>
+                                            <th>ठेगान</th>
+                                            <th>भेट्ने एजेन्डा</th>
+                                            <th>मिति</th>
+                                            <th>समय</th>
+                                            <th>सम्पादन गर्नुहोस्</th>
+                                            <th>स्थिति</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class = "fw-5 fs-16">
+                                        <tr>
+                                            <td>प्लान इन्टरनेशनल</td>
+                                            <td>पुतलीसडक, काठमाडौं</td>
+                                            <td>
+                                                आज  २:३० मा गैर अवसीय संस्थ प्लान ईन्टरनेशनल संगको भेटघाट हाल सडक बालबालिकाहरुले भोग्दै आएको समस्यलाई हल गर्ने उदेश्य
+                                                <a href = "#" class = "text-blue"><i class="bi bi-chevron-down"></i></a>
+                                            </td>
+                                            <td>
+                                                <span class = "tbl-icon d-block mb-2"><img src = "assets/images/calendar-icon.svg" alt = "" class = "mx-auto"></span>7 सेप्टेम्बर 2021
+                                            </td>
+                                            <td>
+                                                <span class = "tbl-icon d-block mb-2"><img src = "assets/images/clock-icon.svg" alt = "" class = "mx-auto"></span>3:00 pm
+                                            </td>
+                                            <td>
+                                                <div class = "d-flex align-items-center justify-content-center">
+                                                    <a href = "#" class = "me-3">
+                                                        <span class = "tbl-icon d-block mb-2"><img src = "assets/images/edit-icon.svg" alt = "" class = "mx-auto"></span>सम्पादन गर्नुहोस्
+                                                    </a>
+                                                    <a href = "#">
+                                                        <span class = "tbl-icon d-block mb-2"><img src = "assets/images/delete-icon.svg" alt = "" class = "mx-auto"></span>हटाउनुहोस्
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class = "tbl-status-btns">
+                                                    <a href = "#" class = "tbl-status-btn d-flex align-items-center">
+                                                        <img src = "assets/images/success-icon.svg" alt = "" class = "tbl-status-icon">
+                                                        <span class = "tbl-status-text">भेटघाट भयो</span>
+                                                        <span class = "tbl-status-toggle">
+                                                            <i class="bi bi-chevron-down"></i>
+                                                        </span>
+                                                    </a>
+                                                    <a href = "#" class = "tbl-status-btn d-flex align-items-center tbl-status-btn-hide">
+                                                        <img src = "assets/images/cancel-icon.svg" alt = "" class = "tbl-status-icon">
+                                                        <span class = "tbl-status-text">भेटघाट भएन</span>
+                                                        <span class = "tbl-status-toggle">
+                                                            <i class="bi bi-chevron-down"></i>
+                                                        </span>
+                                                    </a>
+                                                    <a href = "#" class = "tbl-status-btn d-flex align-items-center tbl-status-btn-hide">
+                                                        <img src = "assets/images/reschedule-icon.svg" alt = "" class = "tbl-status-icon">
+                                                        <span class = "tbl-status-text">रि सेडुल्ट</span>
+                                                        <span class = "tbl-status-toggle">
+                                                            <i class="bi bi-chevron-down"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>प्लान इन्टरनेशनल</td>
+                                            <td>पुतलीसडक, काठमाडौं</td>
+                                            <td>
+                                                आज  २:३० मा गैर अवसीय संस्थ प्लान ईन्टरनेशनल संगको भेटघाट हाल सडक बालबालिकाहरुले भोग्दै आएको समस्यलाई हल गर्ने उदेश्य
+                                                <a href = "#" class = "text-blue"><i class="bi bi-chevron-down"></i></a>
+                                            </td>
+                                            <td>
+                                                <span class = "tbl-icon d-block mb-2"><img src = "assets/images/calendar-icon.svg" alt = "" class = "mx-auto"></span>7 सेप्टेम्बर 2021
+                                            </td>
+                                            <td>
+                                                <span class = "tbl-icon d-block mb-2"><img src = "assets/images/clock-icon.svg" alt = "" class = "mx-auto"></span>3:00 pm
+                                            </td>
+                                            <td>
+                                                <div class = "d-flex align-items-center justify-content-center">
+                                                    <a href = "#" class = "me-3">
+                                                        <span class = "tbl-icon d-block mb-2"><img src = "assets/images/edit-icon.svg" alt = "" class = "mx-auto"></span>सम्पादन गर्नुहोस्
+                                                    </a>
+                                                    <a href = "#">
+                                                        <span class = "tbl-icon d-block mb-2"><img src = "assets/images/delete-icon.svg" alt = "" class = "mx-auto"></span>हटाउनुहोस्
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class = "tbl-status-btns">
+                                                    <a href = "#" class = "tbl-status-btn d-flex align-items-center">
+                                                        <img src = "assets/images/success-icon.svg" alt = "" class = "tbl-status-icon">
+                                                        <span class = "tbl-status-text">भेटघाट भयो</span>
+                                                        <span class = "tbl-status-toggle">
+                                                            <i class="bi bi-chevron-down"></i>
+                                                        </span>
+                                                    </a>
+                                                    <a href = "#" class = "tbl-status-btn d-flex align-items-center tbl-status-btn-hide">
+                                                        <img src = "assets/images/cancel-icon.svg" alt = "" class = "tbl-status-icon">
+                                                        <span class = "tbl-status-text">भेटघाट भएन</span>
+                                                        <span class = "tbl-status-toggle">
+                                                            <i class="bi bi-chevron-down"></i>
+                                                        </span>
+                                                    </a>
+                                                    <a href = "#" class = "tbl-status-btn d-flex align-items-center tbl-status-btn-hide">
+                                                        <img src = "assets/images/reschedule-icon.svg" alt = "" class = "tbl-status-icon">
+                                                        <span class = "tbl-status-text">रि सेडुल्ट</span>
+                                                        <span class = "tbl-status-toggle">
+                                                            <i class="bi bi-chevron-down"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>प्लान इन्टरनेशनल</td>
+                                            <td>पुतलीसडक, काठमाडौं</td>
+                                            <td>
+                                                आज  २:३० मा गैर अवसीय संस्थ प्लान ईन्टरनेशनल संगको भेटघाट हाल सडक बालबालिकाहरुले भोग्दै आएको समस्यलाई हल गर्ने उदेश्य
+                                                <a href = "#" class = "text-blue"><i class="bi bi-chevron-down"></i></a>
+                                            </td>
+                                            <td>
+                                                <span class = "tbl-icon d-block mb-2"><img src = "assets/images/calendar-icon.svg" alt = "" class = "mx-auto"></span>7 सेप्टेम्बर 2021
+                                            </td>
+                                            <td>
+                                                <span class = "tbl-icon d-block mb-2"><img src = "assets/images/clock-icon.svg" alt = "" class = "mx-auto"></span>3:00 pm
+                                            </td>
+                                            <td>
+                                                <div class = "d-flex align-items-center justify-content-center">
+                                                    <a href = "#" class = "me-3">
+                                                        <span class = "tbl-icon d-block mb-2"><img src = "assets/images/edit-icon.svg" alt = "" class = "mx-auto"></span>सम्पादन गर्नुहोस्
+                                                    </a>
+                                                    <a href = "#">
+                                                        <span class = "tbl-icon d-block mb-2"><img src = "assets/images/delete-icon.svg" alt = "" class = "mx-auto"></span>हटाउनुहोस्
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class = "tbl-status-btns">
+                                                    <a href = "#" class = "tbl-status-btn d-flex align-items-center">
+                                                        <img src = "assets/images/success-icon.svg" alt = "" class = "tbl-status-icon">
+                                                        <span class = "tbl-status-text">भेटघाट भयो</span>
+                                                        <span class = "tbl-status-toggle">
+                                                            <i class="bi bi-chevron-down"></i>
+                                                        </span>
+                                                    </a>
+                                                    <a href = "#" class = "tbl-status-btn d-flex align-items-center tbl-status-btn-hide">
+                                                        <img src = "assets/images/cancel-icon.svg" alt = "" class = "tbl-status-icon">
+                                                        <span class = "tbl-status-text">भेटघाट भएन</span>
+                                                        <span class = "tbl-status-toggle">
+                                                            <i class="bi bi-chevron-down"></i>
+                                                        </span>
+                                                    </a>
+                                                    <a href = "#" class = "tbl-status-btn d-flex align-items-center tbl-status-btn-hide">
+                                                        <img src = "assets/images/reschedule-icon.svg" alt = "" class = "tbl-status-icon">
+                                                        <span class = "tbl-status-text">रि सेडुल्ट</span>
+                                                        <span class = "tbl-status-toggle">
+                                                            <i class="bi bi-chevron-down"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>प्लान इन्टरनेशनल</td>
+                                            <td>पुतलीसडक, काठमाडौं</td>
+                                            <td>
+                                                आज  २:३० मा गैर अवसीय संस्थ प्लान ईन्टरनेशनल संगको भेटघाट हाल सडक बालबालिकाहरुले भोग्दै आएको समस्यलाई हल गर्ने उदेश्य
+                                                <a href = "#" class = "text-blue"><i class="bi bi-chevron-down"></i></a>
+                                            </td>
+                                            <td>
+                                                <span class = "tbl-icon d-block mb-2"><img src = "assets/images/calendar-icon.svg" alt = "" class = "mx-auto"></span>7 सेप्टेम्बर 2021
+                                            </td>
+                                            <td>
+                                                <span class = "tbl-icon d-block mb-2"><img src = "assets/images/clock-icon.svg" alt = "" class = "mx-auto"></span>3:00 pm
+                                            </td>
+                                            <td>
+                                                <div class = "d-flex align-items-center justify-content-center">
+                                                    <a href = "#" class = "me-3">
+                                                        <span class = "tbl-icon d-block mb-2"><img src = "assets/images/edit-icon.svg" alt = "" class = "mx-auto"></span>सम्पादन गर्नुहोस्
+                                                    </a>
+                                                    <a href = "#">
+                                                        <span class = "tbl-icon d-block mb-2"><img src = "assets/images/delete-icon.svg" alt = "" class = "mx-auto"></span>हटाउनुहोस्
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class = "tbl-status-btns">
+                                                    <a href = "#" class = "tbl-status-btn d-flex align-items-center">
+                                                        <img src = "assets/images/success-icon.svg" alt = "" class = "tbl-status-icon">
+                                                        <span class = "tbl-status-text">भेटघाट भयो</span>
+                                                        <span class = "tbl-status-toggle">
+                                                            <i class="bi bi-chevron-down"></i>
+                                                        </span>
+                                                    </a>
+                                                    <a href = "#" class = "tbl-status-btn d-flex align-items-center tbl-status-btn-hide">
+                                                        <img src = "assets/images/cancel-icon.svg" alt = "" class = "tbl-status-icon">
+                                                        <span class = "tbl-status-text">भेटघाट भएन</span>
+                                                        <span class = "tbl-status-toggle">
+                                                            <i class="bi bi-chevron-down"></i>
+                                                        </span>
+                                                    </a>
+                                                    <a href = "#" class = "tbl-status-btn d-flex align-items-center tbl-status-btn-hide">
+                                                        <img src = "assets/images/reschedule-icon.svg" alt = "" class = "tbl-status-icon">
+                                                        <span class = "tbl-status-text">रि सेडुल्ट</span>
+                                                        <span class = "tbl-status-toggle">
+                                                            <i class="bi bi-chevron-down"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>प्लान इन्टरनेशनल</td>
+                                            <td>पुतलीसडक, काठमाडौं</td>
+                                            <td>
+                                                आज  २:३० मा गैर अवसीय संस्थ प्लान ईन्टरनेशनल संगको भेटघाट हाल सडक बालबालिकाहरुले भोग्दै आएको समस्यलाई हल गर्ने उदेश्य
+                                                <a href = "#" class = "text-blue"><i class="bi bi-chevron-down"></i></a>
+                                            </td>
+                                            <td>
+                                                <span class = "tbl-icon d-block mb-2"><img src = "assets/images/calendar-icon.svg" alt = "" class = "mx-auto"></span>7 सेप्टेम्बर 2021
+                                            </td>
+                                            <td>
+                                                <span class = "tbl-icon d-block mb-2"><img src = "assets/images/clock-icon.svg" alt = "" class = "mx-auto"></span>3:00 pm
+                                            </td>
+                                            <td>
+                                                <div class = "d-flex align-items-center justify-content-center">
+                                                    <a href = "#" class = "me-3">
+                                                        <span class = "tbl-icon d-block mb-2"><img src = "assets/images/edit-icon.svg" alt = "" class = "mx-auto"></span>सम्पादन गर्नुहोस्
+                                                    </a>
+                                                    <a href = "#">
+                                                        <span class = "tbl-icon d-block mb-2"><img src = "assets/images/delete-icon.svg" alt = "" class = "mx-auto"></span>हटाउनुहोस्
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class = "tbl-status-btns">
+                                                    <a href = "#" class = "tbl-status-btn d-flex align-items-center">
+                                                        <img src = "assets/images/success-icon.svg" alt = "" class = "tbl-status-icon">
+                                                        <span class = "tbl-status-text">भेटघाट भयो</span>
+                                                        <span class = "tbl-status-toggle">
+                                                            <i class="bi bi-chevron-down"></i>
+                                                        </span>
+                                                    </a>
+                                                    <a href = "#" class = "tbl-status-btn d-flex align-items-center tbl-status-btn-hide">
+                                                        <img src = "assets/images/cancel-icon.svg" alt = "" class = "tbl-status-icon">
+                                                        <span class = "tbl-status-text">भेटघाट भएन</span>
+                                                        <span class = "tbl-status-toggle">
+                                                            <i class="bi bi-chevron-down"></i>
+                                                        </span>
+                                                    </a>
+                                                    <a href = "#" class = "tbl-status-btn d-flex align-items-center tbl-status-btn-hide">
+                                                        <img src = "assets/images/reschedule-icon.svg" alt = "" class = "tbl-status-icon">
+                                                        <span class = "tbl-status-text">रि सेडुल्ट</span>
+                                                        <span class = "tbl-status-toggle">
+                                                            <i class="bi bi-chevron-down"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <!-- end of content -->
+            </div>
+        </main>
+
+        
+    </div>
+
+
+    <!-- scripts -->
+    <script src = "assets/js/jquery-3.6.0.js"></script>
+    <script src = "assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src = "assets/js/script.js"></script>
+</body>
+</html>

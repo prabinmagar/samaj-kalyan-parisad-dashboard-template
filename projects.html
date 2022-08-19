@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" type = "image/x-icon" href = "assets/images/site_logo.svg">
+    <title>समाज कल्याण परिषद्</title>
+    <!-- bootstrap -->
+    <link rel = "stylesheet" href = "assets/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <!-- date picker -->
+    <link rel = "stylesheet" href = "assets/plugins/nepali-date-picker/css/nepali.datepicker.v3.7.min.css">
+    <!-- custom stylings -->
+    <link rel = "stylesheet" href = "assets/css/utilities.css">
+    <link rel = "stylesheet" href = "assets/css/style.css">
+</head>
+<body>
+    <div class = "pg-project fnt-mukta">
+        <!-- header section -->
+        <header class = "pg-header">
+            <nav class = "pg-nav px-3">
+                <div class = "container h-100 d-flex align-items-center">
+                    <div class = "pg-nav-and-toggler d-flex align-items-center justify-content-between w-100">
+                        <a href = "dashboard.html" class = "d-flex align-items-center pg-nav-brand flex-wrap">
+                            <img src = "assets/images/site_logo.svg" alt = "site logo">
+                            <div class = "pg-nav-brand-text">
+                                <span class = "d-block fs-22">समाज कल्याण परिषद्</span>
+                                <span class = "text-blue fw-7 fs-35">सचिवलय</span>
+                            </div>
+                        </a>
+
+                        <form class = "pg-nav-form ms-auto">
+                            <div class = "pg-form-elem d-flex align-items-center">
+                                <button type = "button" class = "pg-form-elem-img me-3">
+                                    <img src = "assets/images/search_icon.svg" alt = "" class = "img-fluid">
+                                </button>
+                                <input type = "text" placeholder="Search" class = "border-0 bg-transparent pg-form-elem-field">
+                            </div>
+                        </form>
+
+                        <div class = "pg-nav-btns d-flex align-items-center">
+                            <button class = "pg-nav-btn position-relative my-2">
+                                <img src = "assets/images/bell_icon.svg" alt = "" class = "pg-nav-btn-img">
+                                <span class = "position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">3</span>
+                            </button>
+
+                            <div class="pg-nav-btn dropdown my-2">
+                                <button class="btn dropdown-toggle p-0" type="button" id="navDropdown1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src = "assets/images/user_icon.svg" alt = "" class = "pg-nav-btn-img d-inline-block">
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="navDropdown1">
+                                  <li><a class="dropdown-item" href="#">See Profile</a></li>
+                                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- end of header section -->
+
+        <main>
+            <div class = "main-wrapper d-flex">
+                <!-- sidebar -->
+                <div class = "pg-sidebar pg-block-scrollbar">
+                    <div class = "pg-sidebar-block text-white">
+                        <a href = "#" class = "pg-sidebar-item pg-sidebar-active-item d-flex align-items-center">
+                            <div class = "pg-sidebar-item-icon">
+                                <img src = "assets/images/sidebar-icons/conversation-icon.svg" alt = "">
+                            </div>
+                            <span class = "pg-sidebar-item-text">भेटघाट</span>
+                        </a>
+                        <a href = "#" class = "pg-sidebar-item d-flex align-items-center">
+                            <div class = "pg-sidebar-item-icon">
+                                <img src = "assets/images/sidebar-icons/meeting-icon.svg" alt = "">
+                            </div>
+                            <span class = "pg-sidebar-item-text">कार्यतालिका</span>
+                        </a>
+                        <a href = "#" class = "pg-sidebar-item d-flex align-items-center">
+                            <div class = "pg-sidebar-item-icon">
+                                <img src = "assets/images/sidebar-icons/agreement-icon.svg" alt = "">
+                            </div>
+                            <span class = "pg-sidebar-item-text">साधारण सम्झौता</span>
+                        </a>
+                        <a href = "#" class = "pg-sidebar-item d-flex align-items-center">
+                            <div class = "pg-sidebar-item-icon">
+                                <img src = "assets/images/sidebar-icons/agreement-icon.svg" alt = "">
+                            </div>
+                            <span class = "pg-sidebar-item-text">परियोजना स्वीकृति</span>
+                        </a>
+                        <a href = "#" class = "pg-sidebar-item d-flex align-items-center">
+                            <div class = "pg-sidebar-item-icon">
+                                <img src = "assets/images/sidebar-icons/intern-icon.svg" alt = "">
+                            </div>
+                            <span class = "pg-sidebar-item-text">इन्टर्न</span>
+                        </a>
+                        <a href = "#" class = "pg-sidebar-item d-flex align-items-center">
+                            <div class = "pg-sidebar-item-icon">
+                                <img src = "assets/images/sidebar-icons/visa-icon.svg" alt = "">
+                            </div>
+                            <span class = "pg-sidebar-item-text">भिषा सम्बन्धि</span>
+                        </a>
+                        <a href = "#" class = "pg-sidebar-item d-flex align-items-center">
+                            <div class = "pg-sidebar-item-icon">
+                                <img src = "assets/images/sidebar-icons/setting-icon.svg" alt = "">
+                            </div>
+                            <span class = "pg-sidebar-item-text">सेटिङ</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- end of sidebar -->
+
+                <!-- content -->
+                <div class = "pg-main-content bg-lightblue pg-block-scrollbar">
+                    <div class = "pg-main-wrapper">
+                        <div class = "pg-main-top d-flex align-items-center justify-content-end px-container">
+                            <a href = "#" class = "btn btn-blue d-flex align-items-center">
+                                <span class = "fw-5 fs-14 text-white">अघिल्लो सम्झौताहरू हेर्नुहोस्</span>
+                            </a>
+                        </div>
+                        <div class = "pg-block-wrapper px-container pb-5">
+                            <div class = "pg-block pg-block-1">
+                                <form class = "pg-form">
+                                    <div class = "row">
+                                        <div class = "col-left col-lg-6">
+                                            <div class = "row">
+                                                <div class = "col-lg-6  pe-lg-1">
+                                                    <div class = "form-elem">
+                                                        <label for = "" class = "form-label text-black-50 fs-18 fw-6">दर्ता नं.</label>
+                                                        <input type = "text" class = "form-control" placeholder="दर्ता नं.">
+                                                    </div>
+                                                </div>
+                                                <div class = "col-lg-6 ps-lg-1">
+                                                    <div class = "form-elem">
+                                                        <label for = "" class = "form-label text-black-50 fs-18 fw-6"> सम्झौता मिति</label>
+                                                        <input type = "text" class = "form-control form-control-date nepali-datepicker" placeholder=" सम्झौता मिति">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class = "form-elem">
+                                                <label for = "" class = "form-label text-black-50 fs-18 fw-6">परियोजना संग सम्बन्धित संथको नाम</label>
+                                                <input type = "text" class = "form-control" placeholder="परियोजना संग सम्बन्धित संथको नाम">
+                                            </div>
+                                            <div class = "form-elem">
+                                                <label for = "" class = "form-label text-black-50 fs-18 fw-6">ठेगाना </label>
+                                                <input type = "text" class = "form-control" placeholder="ठेगाना">
+                                            </div>
+                                            <div class = "form-elem">
+                                                <label for = "" class = "form-label text-black-50 fs-18 fw-6">सम्पर्क व्यक्ति </label>
+                                                <input type = "text" class = "form-control" placeholder="सम्पर्क व्यक्ति ">
+                                            </div>
+                                            <div class = "form-elem">
+                                                <label for = "" class = "form-label text-black-50 fs-18 fw-6">सम्पर्क नं.</label>
+                                                <input type = "text" class = "form-control" placeholder="सम्पर्क नं.">
+                                            </div>
+                                            <div class = "form-elem">
+                                                <label for = "" class = "form-label text-black-50 fs-18 fw-6">दात्रृ निकाय </label>
+                                                <input type = "text" class = "form-control" placeholder="दात्रृ निकाय ">
+                                            </div>
+                                            <div class = "form-elem">
+                                                <label for = "" class = "form-label text-black-50 fs-18 fw-6">फाइल/पत्र बुझ्ने जिम्मेवार व्यक्ति</label>
+                                                <input type = "text" class = "form-control" placeholder="फाइल/पत्र बुझ्ने जिम्मेवार व्यक्ति">
+                                            </div>
+                                        </div>
+                                        <div class = "col-right col-lg-6">
+                                            <div class = "form-elem">
+                                                <label for = "" class = "form-label text-black-50 fs-18 fw-6">विषय</label>
+                                                <input type = "text" class = "form-control" placeholder="विषय">
+                                            </div>
+                                            <div class = "form-elem">
+                                                <label for = "" class = "form-label text-black-50 fs-18 fw-6">परियोजनाको नाम</label>
+                                                <input type = "text" class = "form-control" placeholder="परियोजनाको नाम">
+                                            </div>
+                                            <div class = "row">
+                                                <div class = "col-lg-6  pe-lg-1">
+                                                    <div class = "form-elem">
+                                                        <label for = "" class = "form-label text-black-50 fs-18 fw-6"> परियोजना सुरू मिति</label>
+                                                        <input type = "text" class = "form-control form-control-date nepali-datepicker" placeholder=" परियोजना सुरू मिति">
+                                                    </div>
+                                                </div>
+                                                <div class = "col-lg-6 ps-lg-1">
+                                                    <div class = "form-elem">
+                                                        <label for = "" class = "form-label text-black-50 fs-18 fw-6"> परियोजना सम्पन्न मिति</label>
+                                                        <input type = "text" class = "form-control form-control-date nepali-datepicker" placeholder=" परियोजना सम्पन्न मिति">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class = "form-elem">
+                                                <label for = "" class = "form-label text-black-50 fs-18 fw-6">जम्मा बजेट रकम रु</label>
+                                                <input type = "text" class = "form-control" placeholder="जम्मा बजेट रकम रु">
+                                            </div>
+                                            <div class = "form-elem">
+                                                <label for = "" class = "form-label text-black-50 fs-18 fw-6">कार्यक्षेत्र</label>
+                                                <input type = "text" class = "form-control" placeholder="कार्यक्षेत्र">
+                                            </div>
+                                            <div class = "row">
+                                                <div class = "col-lg-6  pe-lg-1">
+                                                    <div class = "form-elem">
+                                                        <label for = "" class = "form-label text-black-50 fs-18 fw-6"> सचिवालयमा फाइल आएको मिति</label>
+                                                        <input type = "text" class = "form-control form-control-date nepali-datepicker" placeholder=" सचिवालयमा फाइल आएको मिति">
+                                                    </div>
+                                                </div>
+                                                <div class = "col-lg-6 ps-lg-1">
+                                                    <div class = "form-elem">
+                                                        <label for = "" class = "form-label text-black-50 fs-18 fw-6"> सचिवालयमा फाइल आएको मिति</label>
+                                                        <input type = "text" class = "form-control form-control-date nepali-datepicker" placeholder=" सचिवालयमा फाइल आएको मिति">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class = "row justify-content-start">
+                                                <div class = " col-md-6  pe-md-1 offset-md-6 ms-0">
+                                                    <div class = "form-elem">
+                                                        <label for = "" class = "form-label text-black-50 fs-18 fw-6"> पठाएको मिति</label>
+                                                        <input type = "text" class = "form-control form-control-date nepali-datepicker" placeholder=" पठाएको मिति">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class = "col-12">
+                                            <div class = "form-elem">
+                                                <label for = "" class = "form-label text-black-50 fs-18 fw-6">कैफियत</label>
+                                                <textarea class = "form-control" placeholder="कैफियत"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class = "pg-form-btns d-flex align-items-center justify-content-end mt-3">
+                                        <button type = "reset" class = "btn btn-white-outline fs-20 me-3">रद्द गर्नुहोस्</button>
+                                        <button type = "submit" class = "btn btn-green fs-20">Update</button>
+                                    </div>
+                                </form>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <!-- end of content -->
+            </div>
+        </main>
+
+        
+    </div>
+
+
+    <!-- scripts -->
+    <script src = "assets/js/jquery-3.6.0.js"></script>
+    <!-- nepali date picker -->
+    <script src = "assets/plugins/nepali-date-picker/js/nepali.datepicker.v3.7.min.js"></script>
+    <!-- bootstrap -->
+    <script src = "assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src = "assets/js/script.js"></script>
+</body>
+</html>
